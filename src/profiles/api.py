@@ -10,7 +10,3 @@ def ProfileViewSet(request):
     all_profiles = Profile.objects.all()
     data = ProfileSerializer(all_profiles , many=True).data
     return Response({'data':data})
-
-
-def ahamd(request):
-    pass
